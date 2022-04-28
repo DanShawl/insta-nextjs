@@ -127,7 +127,7 @@ const Post = ({ id, username, userImg, img, caption }) => {
         {likes.length > 0 && (
           <p className="mb-1 font-bold">{likes.length} likes</p>
         )}
-        <span className="mr-1 font-bold">{username} </span>
+        <span className="mr-1 font-bold">{username}</span>
         {caption}
       </p>
       {/* Comments */}
@@ -153,6 +153,7 @@ const Post = ({ id, username, userImg, img, caption }) => {
           ))}
         </div>
       )}
+
       {/* Input Box */}
       {session && (
         <form className="flex items-center p-4">
